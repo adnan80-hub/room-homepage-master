@@ -1,0 +1,304 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 90vh;
+    font-family: "League Spartan", sans-serif !important;
+    overflow: hidden;
+}
+
+@media (max-width: 992px) {
+    body {
+        overflow: unset;
+        overflow-x: hidden;
+    }
+}
+
+:root {
+    --White: hsl(0, 100%, 100%);
+    --Grey-500: hsl(0, 0%, 63%);
+    --Grey-800: hsl(0, 0%, 27%);
+    --Black: hsl(0, 0%, 0%);
+
+}
+
+/* ======= rows - active ======= */
+
+.page-act {
+    display: flex !important;
+}
+
+.page-inact {
+    display: none !important;
+}
+
+
+
+
+.page-two {
+    display: none;
+
+}
+
+/* ========== header ========== */
+
+.header {
+    top: 50px;
+    left: 4rem;
+    z-index: 99;
+}
+
+
+.active {
+    display: block !important;
+}
+
+.not-active {
+    display: none !important;
+}
+
+.header .bar {
+    display: none;
+    cursor: pointer;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+    color: var(--White);
+    padding: 0;
+}
+
+.header ul li {
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header ul img {
+    display: none;
+}
+
+
+@media (max-width: 573px) {
+    .header .bar {
+        display: block;
+    }
+
+    .header .logo-header {
+        margin-left: 7rem;
+    }
+
+    .header ul {
+        position: absolute;
+        top: -3rem;
+        left: -4rem;
+        background-color: var(--White);
+        color: black !important;
+        width: 500%;
+        height: 0px;
+        overflow: hidden;
+        padding-left: 30px !important;
+        transition: 0.5s;
+        gap: 2.5rem !important;
+    }
+
+    .header ul img {
+        display: block;
+        width: 1%;
+        height: 18%;
+        cursor: pointer;
+        object-fit: cover;
+    }
+}
+
+/* ==== Angles -- right -- left === */
+
+.angles-left-right {
+    bottom: calc(8% - 1px);
+    right: calc(-14rem + 20px);
+    transform: translateY(53%);
+    z-index: 99;
+}
+
+@media(max-width:992px) {
+    .angles-left-right {
+        right: 0;
+    }
+}
+
+.angles-left-right .ang-left,
+.angles-left-right .ang-right {
+    width: calc(103px - 1px);
+    padding: 30px;
+    background-color: var(--Black);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.angles-left-right .ang-left img,
+.angles-left-right .ang-right img {
+    width: 15px;
+}
+
+/* ========== section =========== */
+
+.dis-flex {
+    display: flex !important;
+}
+
+.head-page {
+    display: none;
+}
+
+.img-head {
+    width: 57%;
+    height: 62vh;
+}
+
+.inside-img,
+.inside-img-2,
+.inside-img-3 {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/desktop-image-hero-1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.inside-img-2 {
+    background-image: url("../images/desktop-image-hero-2.jpg");
+}
+
+.inside-img-3 {
+    background-image: url("../images/desktop-image-hero-3.jpg");
+}
+
+.title-room {
+    width: 41%;
+}
+
+@media(max-width: 992px) {
+    .head-page {
+        flex-direction: column;
+    }
+
+    .img-head {
+        width: 100% !important;
+    }
+
+    .title-room {
+        width: 100% !important;
+    }
+}
+
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.title-room h1 {
+    font-size: clamp(32px, 5vw + 1rem, 62px);
+    font-weight: 700;
+}
+
+.title-room p {
+    width: 100%;
+    max-width: 550px;
+    font-size: 18px;
+    color: var(--Grey-500);
+}
+
+.shop-now {
+    width: 550px;
+}
+
+@media (max-width: 992px) {
+    .shop-now {
+        width: 450px;
+    }
+
+    .shop-now button {
+        font-size: 13px;
+    }
+}
+
+
+
+.shop-now button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    letter-spacing: 18px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+.shop-now .img-shop {
+    width: 50px;
+}
+
+.shop-now .img-shop img {
+    width: 100%;
+}
+
+/* ======= second- rows ======== */
+
+
+.rows-down .about-furniture h2 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 10px;
+}
+
+.rows-down .about-furniture p {
+    width: 100%;
+    max-width: 550px;
+    font-size: 17px;
+    color: var(--Grey-500);
+}
+
+
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+> 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens.
+
+## Colors
+
+### Primary
+
+- White: hsl(0, 100%, 100%)
+- Grey 500: hsl(0, 0%, 63%)
+- Grey 800: hsl(0, 0%, 27%)
+- Black: hsl(0, 0%, 0%)
+
+## Typography
+
+### Body Copy
+
+- Font size (paragraphs): 16px
+
+### Font
+
+- Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+- Weights: 500, 600, 700
+
+> 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma. */
