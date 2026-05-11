@@ -196,6 +196,18 @@ body {
     .title-room {
         width: 100% !important;
     }
+
+    .inside-img {
+        background-image: url("../images/mobile-image-hero-1.jpg");
+    }
+
+    .inside-img-2 {
+        background-image: url("../images/mobile-image-hero-2.jpg");
+    }
+
+    .inside-img-3 {
+        background-image: url("../images/mobile-image-hero-3.jpg");
+    }
 }
 
 
@@ -224,11 +236,12 @@ img {
 
 @media (max-width: 992px) {
     .shop-now {
-        width: 450px;
+        width: 346px;
     }
 
     .shop-now button {
-        font-size: 13px;
+        font-size: 15px !important;
+        letter-spacing: 15px !important;
     }
 }
 
