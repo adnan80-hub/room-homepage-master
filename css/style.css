@@ -219,8 +219,9 @@ img {
 }
 
 .title-room h1 {
-    font-size: clamp(32px, 5vw + 1rem, 62px);
+    font-size: clamp(33px, 5vw + 0rem, 62px);
     font-weight: 700;
+    text-align: center;
 }
 
 .title-room p {
