@@ -12,8 +12,8 @@ closes.onclick = function () {
     uls.style.cssText = "height: 0;"
 }
 
-let arrowRight = document.querySelectorAll(".ang-right");
-let arrowLeft = document.querySelectorAll(".ang-left");
+const arrowRight = document.querySelectorAll(".ang-right");
+const arrowLeft = document.querySelectorAll(".ang-left");
 
 arrowRight.forEach((ele) => {
     ele.addEventListener("click", function () {
