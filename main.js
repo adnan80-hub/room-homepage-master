@@ -1,8 +1,6 @@
-let bar = document.querySelector(".bar");
-let closes = document.querySelector(".closes");
-let uls = document.querySelector("ul");
-
-
+const bar = document.querySelector(".bar");
+const closes = document.querySelector(".closes");
+const uls = document.querySelector("ul");
 
 
 
